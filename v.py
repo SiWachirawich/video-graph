@@ -1,10 +1,6 @@
 import cv2
 import numpy as np
-from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-from matplotlib.figure import Figure
 
-import matplotlib.pyplot as plt
-import csv
 video_capture = cv2.VideoCapture('pig_vid.mp4')
 frame_rate = video_capture.get(cv2.CAP_PROP_FPS)
 video_duration = int(video_capture.get(cv2.CAP_PROP_FRAME_COUNT))
